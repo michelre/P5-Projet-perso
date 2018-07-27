@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   
-	<?php include("../template/head.php") ?>
+	<?php include("VIEW/template/head.php") ?>
  
 	<title>Du light pour vos desirs</title>
 </head>
@@ -11,7 +11,7 @@
 	
 <header>
 	
-<?php include("../template/header.php") ?>
+<?php include("VIEW/template/header.php") ?>
 
 	</header>
 	
@@ -46,7 +46,7 @@
 	
 	
 </div>
-	<div>
+	
 		<h3 class="text-center border border-info rounded bg-info text-white container">Vos avis </h3>
 		   
 		<?php foreach ($comments as $comment) { ?>
@@ -54,10 +54,10 @@
         <h4><?php echo $comment->getAuthor(); ?></h4>
         <p><?php echo $comment->getComment(); ?></p>
 	</div>
-		
-    </div>
-	<?php include("../template/footer.php") ?>
-	
+	<?php } ?>
+    <footer>
+	<?php include("VIEW/template/footer.php") ?>
+    </footer>
 	<script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     
 	</body>	
