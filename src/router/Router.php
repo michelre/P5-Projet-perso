@@ -18,7 +18,7 @@ class Router
     {
         $klein = new \Klein\Klein();
 
-        $klein->respond('GET', '/home', function () {
+        $klein->respond('GET', '/', function () {
             $this->frontendController->home();
         });
 
@@ -42,8 +42,17 @@ class Router
             $this->frontendController->avis();
         });
 
-        $klein->respond('GET', '/public/[*]', function($request, $response) {
-            $response->file(__DIR__ . '..'. $request->pathname());
+        $klein->respond('GET', '/public/[*]', function ($request, $response) {
+            $file = __DIR__ . '/..' . $request->pathname();
+            $types = [
+                "css" => "text/css",
+                "js" => "application/javascript",
+                "png" => "image/png",
+                "jpg" => "image/jpg",
+            ];
+            $contentType = $types[pathinfo($file, PATHINFO_EXTENSION)];
+            $response->header('Content-type', $contentType);
+            return file_get_contents($file);
         });
 
         $klein->dispatch();

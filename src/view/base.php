@@ -20,13 +20,13 @@
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-75" src="src/public/images/burgers1.jpg" alt="burger">
+      <img class="d-block w-75" src="/public/images/burgers1.jpg" alt="burger">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-75" src="src/public/images/salades_crevette1.jpg" alt="salades">
+      <img class="d-block w-75" src="/public/images/salades_crevette1.jpg" alt="salades">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-75" src="src/public/images/Salade_de_fruits_exotiques.jpg" alt="dessert aux fruits">
+      <img class="d-block w-75" src="/public/images/Salade_de_fruits_exotiques.jpg" alt="dessert aux fruits">
     </div>
   </div>
 </div>
