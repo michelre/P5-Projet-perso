@@ -9,14 +9,17 @@
 	
 <body>
 	
-<header>
+<header class="pb-5">
 	
 <?php include("VIEW/template/header.php") ?>
 
 	</header>
-	
-	<p class="container mt-"> Vous avez envie de manger un burger , une salade sans vous sentir coupable , vous etes sur la bonne pages , regardez se que nous vous proposons !</p>
 	<div class="container">
+        
+        	
+	<p class="container mt-5"> Vous avez envie de manger un burger , une salade sans vous sentir coupable , vous êtes sur la bonne pages , regardez se que nous vous proposons !</p>
+        
+        
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

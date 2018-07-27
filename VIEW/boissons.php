@@ -33,7 +33,7 @@
 
 	</section>
 	
-	<img class="rounded mx-auto d-block mt-5"src="/PUBLIC/icons/boissons.png">
+	<img class="rounded mx-auto d-block mt-5 w-25"src="/PUBLIC/icons/boissons.png">
 	
 	<h1 class="container-fluid text-center mt-5 border border-primary rounded bg-info">
 		Les boissons en 50cl</h1>
