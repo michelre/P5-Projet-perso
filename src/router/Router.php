@@ -50,7 +50,7 @@ class Router
                 "png" => "image/png",
                 "jpg" => "image/jpg",
             ];
-            $contentType = $types[pathinfo($file, PATHINFO_EXTENSION)];
+            $contentType = $types[pathinfo($file, PATHINFO_EXTENSION)] ?? mime_content_type($file);
             $response->header('Content-type', $contentType);
             return file_get_contents($file);
         });
